@@ -12,9 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: {
       entry: "server",
-      // Deploy target: "vercel" for Vercel, "netlify" for Netlify, "cloudflare-pages" for CF Pages.
-      // Local `vite dev` ignores this — only applies during `vite build`.
-      preset: "vercel",
     },
+  },
+  nitro: {
+    preset: "vercel",
   },
 });
